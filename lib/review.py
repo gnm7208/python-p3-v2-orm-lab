@@ -61,6 +61,7 @@ class Review:
         """
         CURSOR.execute(sql, (self.year, self.summary, self.employee_id))
         CONN.commit()
+        
         self.id = CURSOR.lastrowid
         type(self).all[self.id] = self
 
