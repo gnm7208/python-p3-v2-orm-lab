@@ -4,6 +4,14 @@ from employee import Employee
 
 
 class Review:
+    """Review class representing employee performance reviews.
+    
+    Attributes:
+        year (int): Review year (must be >= 2000)
+        summary (str): Review summary (non-empty string)
+        employee_id (int): Foreign key to Employee table
+        id (int): Primary key (auto-generated)
+    """
 
     # Dictionary of objects saved to the database.
     all = {}
